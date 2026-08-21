@@ -27,7 +27,7 @@ class Product(Base):
             name = "chk_product_price"
         ),
         CheckConstraint(
-            "stock_quantity <= 0",
+            "stock_quantity >= 0",
             name = "chk_product_stock_quantity"
         )
     )
